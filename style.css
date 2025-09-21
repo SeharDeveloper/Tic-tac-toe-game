@@ -92,3 +92,40 @@ main {
 #restartBtn:hover {
     background: #2A2343;
 }
+#header .player {
+    background: #17122A;
+    width: 70px;              /* slightly bigger */
+    height: 70px;             /* equal height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;          /* balanced text size */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;       /* make them circular */
+    border: solid 3px transparent;
+    opacity: 0.8;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* soft shadow */
+}
+
+#header .player:hover {
+    border: solid 3px #2A2343;
+    transform: scale(1.1);    /* hover zoom */
+}
+
+#header .player-active {
+    opacity: 1;
+    border: solid 3px #2A2343;
+    box-shadow: 0 0 12px #2A2343; /* glowing effect */
+}
+
+#header #xPlayerDisplay {
+    color: #1892EA; /* X = blue */
+    text-shadow: 0 0 8px #1892EA;
+}
+
+#header #oPlayerDisplay {
+    color: #A737FF; /* O = purple */
+    text-shadow: 0 0 8px #A737FF;
+}

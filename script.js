@@ -1,3 +1,4 @@
+
 const cells = document.querySelectorAll('.cell')
 const titleHeader = document.querySelector('#titleHeader')
 const xPlayerDisplay = document.querySelector('#xPlayerDisplay')
@@ -144,3 +145,4 @@ restartBtn.addEventListener('click', () => {
     isGameStart = false
     titleHeader.textContent = 'Choose'
 })
+
